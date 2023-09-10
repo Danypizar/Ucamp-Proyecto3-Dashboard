@@ -1,6 +1,6 @@
 //LLAMADA A LA API PARA DATOS DEL CANVA
 // chart solo puede crear un grafico por id sino da error por eso
-// tiene el id dinamico
+// tiene el id dinamico*****
 
 
 Chart.defaults.color = "black";
