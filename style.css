@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+/*--- Header styles ---*/
+
+.header__navigation{
+  display: flex;
+  position: fixed;
+
+  z-index: 99;
+  justify-content: space-around;
+  background-color: blue;
+  color: white;
+  height: auto;
+  width: 100%;
+}
+
+
+.header__logo{
+  margin-top: 20px;
+  font-size: 1.4em;
+
+}
+
+.header__logo:hover{
+  font-size: 1.8em;
+  color: yellow;
+  cursor: pointer;
+}
+
+.header__logo span{
+  font-size: 1em; 
+}
+
+.navbar{
+  margin-top: 10px;
+}
+
+.navbar__items {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.navbar__link {
+  padding-left: 20px;
+  text-decoration: none;
+  justify-content: space-between;
+  font-size: 1.2em;
+}
+
+.navbar__link:hover{
+  font-size: 1.35em;
+  color: blue;
+  cursor: pointer;
+}
+
+.navbar__bars {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  display: none;
+}
+
+.navbar__bars:hover{
+  color: greenyellow;
+  cursor: pointer;
+}
+
+
+/*--- Main styles ---*/
+
+.main {
+  display: flex;
+  flex-direction:column ;
+  height: auto;
+  width: auto;
+  margin: 10px 10px;
+
+}
+
+/*--- Card styles ---*/
+
+
+.card__item{
+  font-weight: 500;
+  margin-top: 80px;
+  padding: 1rem;
+  height: 50%;
+  width: 100%;
+  margin-bottom: 40px;
+  background-color: white;
+}
+
+.canvas {
+  border: 2px solid black;
+  height: 60%;
+  width: 90%;
+}
+
+/*--- Footer styles ---*/
+
+
+.footer {
+  width: 100%;
+  padding-top: 1rem;
+  background-color: blue;
+  color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  bottom: 0px;
+}
+
+.footer ul {
+  display: flex;
+  list-style: none;
+}
+
+.icons {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  font-size: 1.1rem;
+}
+
+li a {
+  color: inherit;
+}
+li a:hover {
+  color: inherit;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin: 0.5rem;
+}
+
+#github:hover {
+  color: white;
+}
+
+.img {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 25rem;
+}
+
+
+
+
+@media (max-width: 852px) {
+  .navbar__bars {
+    display: block;
+  }
+  .navbar__items{
+    display: none;
+  }
+  .header__logo{
+    margin-top: 30px;
+  }
+  .main{
+    width: 100%;
+    height: auto;
+  }
+  .card__item{
+    width: auto;
+    height: auto;
+  }
+  .cards__container{
+    width: auto;
+    height: auto;
+  }
+}
+
+.bxl-twitter:hover{
+ color: #00acee;
+}
+
+.bxl-instagram-alt:hover{
+color: rgb(173, 94, 248);
+}
+
+.bxs-envelope:hover{
+color: gray
+}
